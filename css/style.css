@@ -1,4 +1,34 @@
+body {
+    margin: 86px 208px;
+}
+
+#header {
+    background-image: url('../img/arva.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40px;
+}
+
 #tab-container {
     display: flex;
     flex-direction: row;
+}
+
+.tab {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 16px;
+}
+
+.selected {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #18D3B9;
+    width: 64px;
+    height: 2px;
 }
