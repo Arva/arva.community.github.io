@@ -1,11 +1,25 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width,user-scalable=no">
-        <link href="//fonts.googleapis.com/css?family=Roboto:100,300|Montserrat:300,400,600,800" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,600,800,900,1000" rel="stylesheet">
         <link href="./css/reset.css" rel="stylesheet" type="text/css" />
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <div id="mobile-header">
+            <div id="mobile-logo">
+                <img  src="img/arva.png"/>
+            </div>
+            <div id="nav-container">
+                <select>
+                    <option>Resources</option>
+                    <option>Features</option>
+                    <option>Projects</option>
+                    <option>About</option>
+                    <option>Support</option>
+                </select>
+            </div>
+        </div>
         <div id="header">
             <div id="tab-container">
                 <div id="tab-resources" class="tab">
@@ -29,19 +43,380 @@
         <div id="content-wrapper">
             <div id="content">
                 <div id="content-resources">
-                    <div>Get Started</div>
-                    <div>Documentation</div>
-                    <div>Arva on Reddit</div>
-                    <div>Tutorial</div>
-                    <div>ARVA UI Kit</div>
-                    <div>ARVA Icons</div>
+                    <div id="resources-grid-wrapper">
+                        <div id="resources-grid">
+                            <div class="resources-item">
+                                <img class="resources-img" src="img/get_started.svg"/>
+                                <div class="resources-title">Get Started</div>
+                                <div class="resources-subtitle">Install the latest version</div>
+                            </div>
+                            <div class="resources-item">
+                                <img class="resources-img" src="img/documentation.svg"/>
+                                <div class="resources-title">Documentation</div>
+                                <div class="resources-subtitle">Your bible of power</div>
+                            </div>
+                            <div class="resources-item">
+                                <img class="resources-img" src="img/reddit.svg"/>
+                                <div class="resources-title">Arva on Reddit</div>
+                                <div class="resources-subtitle">Discuss anything</div>
+                            </div>
+                            <div class="resources-item">
+                                <img class="resources-img" src="img/tutorial.svg"/>
+                                <div class="resources-title">Tutorial</div>
+                                <div class="resources-subtitle">Get to know ARVA</div>
+                            </div>
+                            <div class="resources-item">
+                                <img class="resources-img" src="img/arva_ui.svg"/>
+                                <div class="resources-title">ARVA UI Kit</div>
+                                <div class="resources-subtitle">Free component library</div>
+                            </div>
+                            <div class="resources-item">
+                                <img class="resources-img" src="img/arva_icons.svg"/>
+                                <div class="resources-title">ARVA Icons</div>
+                                <div class="resources-subtitle">Free icon set</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="content-features">Features</div>
-                <div id="content-projects">Projects</div>
-                <div id="content-about">About</div>
-                <div id="content-support">Support</div>
+                <div id="content-features">
+                    <div id="features-grid-wrapper">
+                        <div id="features-grid">
+                            <div class="features-item">
+                                <div class="features-title">Granular Animations</div>
+                                <div class="features-subtitle">Granular animations have never been easier to code. Using the Layout and Flow APIs, any animation is possible.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-title">Cross Platform</div>
+                                <div class="features-subtitle">Whether you want to deploy your idea on mobile, desktops, smart TVs, websites or all at once, ARVA has you covered.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-title">Responsive Nature</div>
+                                <div class="features-subtitle">With scalability in mind, you can build UIs that effortlessly adapt to all possible screen sizes.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-title">Native Feel</div>
+                                <div class="features-subtitle">Delight your customers with a great native-like experience, complete with 60fps granular animations.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-title">Enterprise-Grade Quality</div>
+                                <div class="features-subtitle">We know how managing sizeable projects can turn into a nightmare, so we built ARVA to fit your most ambitious goals.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-title">Component Reusability</div>
+                                <div class="features-subtitle">You never enjoyed reinventing the wheel. Neither did we. And with ARVA, you don't have to, either.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-projects">
+                    <div id="projects-grid-wrapper">
+                        <div id="projects-grid">
+                            <div class="slider js_slider">
+                                <div class="frame js_frame">
+                                    <ul class="slides js_slides">
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_insinger.png"/>
+                                                <div class="projects-title">Insinger Gilisen</div>
+                                                <div class="projects-subtitle">All your banking data conveniently and securely in one place.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_legalbikes.png"/>
+                                                <div class="projects-title">LegalBikes</div>
+                                                <div class="projects-subtitle">Need a bike? Get yours anytime, anywhere you are. Cheaply. Legally.</div>
+                                                <div class="projects-case">Case</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_me.png"/>
+                                                <div class="projects-title">ME</div>
+                                                <div class="projects-subtitle">Quizzes and leaderboards makes learning for employees fun.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_mrbox.png"/>
+                                                <div class="projects-title">mrBOX</div>
+                                                <div class="projects-subtitle">Storage workflow for consumers, logistics and management</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_quibble.png"/>
+                                                <div class="projects-title">Quibble</div>
+                                                <div class="projects-subtitle">Explore the world around you. See what’s happening in your area.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_rijbewijs.png"/>
+                                                <div class="projects-title">Rijbewijs Trainer</div>
+                                                <div class="projects-subtitle">Train for every aspect of your driving test on your phone</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_shapeshifter.png"/>
+                                                <div class="projects-title">ShapeShifter</div>
+                                                <div class="projects-subtitle">A puzzle game: shift one shape into another without colliding!</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_superstereo.png"/>
+                                                <div class="projects-title">SuperStereo</div>
+                                                <div class="projects-subtitle">Find your best spot for a night out. Don’t Gamble - preview the music.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_swyber.png"/>
+                                                <div class="projects-title">Swyber</div>
+                                                <div class="projects-subtitle">Teaching, testing and rewarding distributed cybersecurity courses.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_talentdater.png"/>
+                                                <div class="projects-title">TalentDater</div>
+                                                <div class="projects-subtitle">Talent finds other talent, easier than ever before.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-mobile">
+                                                <img class="projects-img" src="img/carousel/carousel_tradesquare.png"/>
+                                                <div class="projects-title">TradeSquare</div>
+                                                <div class="projects-subtitle">Find events near you, get tickets, share tickets and enter. Enjoy!</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-desktop">
+                                                <img class="projects-img" src="img/carousel/carouselDesk_bizHR.png"/>
+                                                <div class="projects-title">BizHR</div>
+                                                <div class="projects-subtitle">Feedback for enterprise tasks and competences made easy.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-desktop">
+                                                <img class="projects-img" src="img/carousel/carouselDesk_faas.png"/>
+                                                <div class="projects-title">Kitty</div>
+                                                <div class="projects-subtitle">Automatically optimising your cash flow by chasing your debtors.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-desktop">
+                                                <img class="projects-img" src="img/carousel/carouselDesk_KPNCXP.png"/>
+                                                <div class="projects-title">KPN Customer eXperience Portal</div>
+                                                <div class="projects-subtitle">Internally sharing knowledge about customer communications.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-desktop">
+                                                <img class="projects-img" src="img/carousel/carouselDesk_SSD.png"/>
+                                                <div class="projects-title">Samen Slimmer Deals</div>
+                                                <div class="projects-subtitle">Requesting and sharing knowledge within your company.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-desktop">
+                                                <img class="projects-img" src="img/carousel/carouselDesk_SITRAPP.png"/>
+                                                <div class="projects-title">SITRAPP</div>
+                                                <div class="projects-subtitle">Identify trends and gaps in the entire application market.</div>
+                                            </div>
+                                        </li>
+                                        <li class="js_slide">
+                                            <div class="projects-item projects-item-desktop">
+                                                <img class="projects-img" src="img/carousel/carouselDesk_UFL.png"/>
+                                                <div class="projects-title">University for Life</div>
+                                                <div class="projects-subtitle">Everything needed for studies, from course material to CV building.</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="js_prev prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="none" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+                                </span>
+                                <span class="js_next next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="none" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+                                </span>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="content-about">
+                    <div id="about-grid-wrapper">
+                        <div id="about-grid">
+                            <div id="about-text">
+                                With easy semantics, developers can build highly performant visualisations. A single technology stack to master pixel perfection, granular animations and real-time data binding. All provided as open source with maximum hacking capabilities for the hardware platform of your choosing.
+                            </div>
+                            <div id="about-people">
+                                <div id="people-grid">
+                                    <div class="people-item">
+                                        <img class="people-img" src="img/avatars/avatar-hans.svg"/>
+                                        <div class="people-name">Hans van den Akker</div>
+                                        <div class="people-title">CEO</div>
+                                    </div>
+                                    <div class="people-item">
+                                        <img class="people-img" src="img/avatars/avatar-karl.svg"/>
+                                        <div class="people-name">Karl Lundfall</div>
+                                        <div class="people-title">Lead developer</div>
+                                    </div>
+                                    <div class="people-item">
+                                        <img class="people-img" src="img/avatars/avatar-charilaos.svg"/>
+                                        <div class="people-name">Charilaos Mulder</div>
+                                        <div class="people-title">Product designer</div>
+                                    </div>
+                                    <div class="people-item">
+                                        <img class="people-img" src="img/avatars/avatar-sam.png"/>
+                                        <div class="people-name">Simion Muntean</div>
+                                        <div class="people-title">Brand designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-support">
+                    <div id="support-grid-wrapper">
+                        <div id="support-grid">
+                            <div class="support-column">
+                                <div class="support-title">Capabilities</div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Which platforms are supported?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        Windows Mobile only
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            How well does it scale
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        All the way from small to big
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            How long until I can create my first application?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        You haven't started yet?
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Can I use native platform features?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        Probably
+                                    </div>
+                                </div>
+                                <div class="support-title">Known issues</div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Why are SVGs sometimes rendered incorrectly?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        Because your SVGs suck and you should feel bad
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Why are list elements jumping around?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        They're easily excited
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="support-column">
+                                <div class="support-title">Results</div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Are clients usually happy?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        I hope so
+                                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            How many ARVA apps exist right now?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        In total 22 arva applications have been made, 17 of which are in active use at this moment. Over half of the applications have bigscreen optimizations or full fledged desktop management applications.
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Does it auto-skyrocket businesses?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        Yep
+                                    </div>
+                                </div>
+                                <div class="support-title">More questions?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/lory.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
