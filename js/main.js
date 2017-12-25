@@ -13,8 +13,28 @@ window.addEventListener('load', function(e) {
         window.location.hash = "#" + tabName;
     });
     var carouselEl = document.getElementById("projects-grid");
-    var carousel = lory(carouselEl, {
+    // var carousel = lory(carouselEl, {
+    // });
+    var slider = tns({
+        container: '.projects-slider',
+        items: 1,
+        loop: true,
+        nav: false,
+        controls: false,
+        slideBy: 'page',
+        mouseDrag: true,
+        responsive: {
+            1024: {
+                items: 3
+            },
+            720: {
+                items: 1
+            }
+        },
+        autoplay: false
     });
+    document.getElementsByClassName("next")[0].addEventListener("click", function() { slider.goTo('next'); });
+    document.getElementsByClassName("prev")[0].addEventListener("click", function() { slider.goTo('prev'); });
 });
 
 
@@ -108,7 +128,7 @@ function FAQ(el) {
             this.faqs["faq-" + i] = { question: question, answer: answer, expanded: false };
             elFAQ["data-faqId"] = "faq-" + i;
             i++;
-            elFAQ.addEventListener('click', this.handleFAQClick.bind(this));
+            if(answer.length) { elFAQ.addEventListener('click', this.handleFAQClick.bind(this)); }
         }
     };
     this.handleFAQClick = function(e) {
@@ -117,4 +137,9 @@ function FAQ(el) {
         faq.expanded ? faq.question[0].parentElement.classList.add('faq-expanded') : faq.question[0].parentElement.classList.remove('faq-expanded');
     };
     this.initFAQs(el);
+}
+
+function emailSupport() {
+    window.location.href = ('mailto:someone@bizboard.nl');
+    return false;
 }

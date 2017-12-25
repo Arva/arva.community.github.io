@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 56 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>native</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#24EAC9" offset="0%"></stop>
+            <stop stop-color="#00FA9A" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="8" y="12" width="48" height="8" rx="1"></rect>
+        <filter x="-12.5%" y="-75.0%" width="125.0%" height="250.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Features" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-333.000000, -542.000000)">
+        <g id="native" transform="translate(329.000000, 541.000000)">
+            <path d="M26,14.1715729 L29.1715729,11 L24,5.82842712 L20.8284271,9 L26,14.1715729 Z M32,8.17157288 L37.1715729,3 C38.73367,1.43790283 41.26633,1.43790283 42.8284271,3 L46,6.17157288 C47.5620972,7.73367004 47.5620972,10.26633 46,11.8284271 L34,23.8284271 L32,21.8284271 L30,23.8284271 L18,11.8284271 C16.4379028,10.26633 16.4379028,7.73367004 18,6.17157288 L21.1715729,3 C22.73367,1.43790283 25.26633,1.43790283 26.8284271,3 L32,8.17157288 Z M32,20.1715729 L35.1715729,17 L32,13.8284271 L28.8284271,17 L32,20.1715729 Z M38,14.1715729 L43.1715729,9 L40,5.82842712 L34.8284271,11 L38,14.1715729 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <rect id="Rectangle-20" fill="url(#linearGradient-1)" x="12" y="16" width="40" height="42" rx="1"></rect>
+            <rect id="Rectangle-21-Copy" fill="#FFFFFF" x="31" y="16" width="2" height="42"></rect>
+            <g id="Rectangle-20">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <rect id="Rectangle-21" fill="#FFFFFF" x="30" y="12" width="4" height="8"></rect>
+        </g>
+    </g>
+</svg>

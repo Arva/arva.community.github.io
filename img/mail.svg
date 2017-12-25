@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1181.000000, -661.000000)">
+        <g id="Group-3-Copy-3" transform="translate(736.000000, 645.000000)" fill="#18D3B9" fill-rule="nonzero">
+            <g id="Group" transform="translate(445.000000, 16.000000)">
+                <path d="M2,2 L2,14 L22,14 L22,2 L2,2 Z M2,4.4408921e-16 L22,4.4408921e-16 C23.1045695,-1.77635684e-15 24,0.8954305 24,2 L24,14 C24,15.1045695 23.1045695,16 22,16 L2,16 C0.8954305,16 1.3527075e-16,15.1045695 0,14 L0,2 C-1.3527075e-16,0.8954305 0.8954305,0 2,4.4408921e-16 Z" id="Rectangle"></path>
+                <path d="M1,2.41421356 L2.42484245,1 L12.5,11 L22.5751576,1 L24,2.41421356 L13.9248424,12.4142136 C13.1379237,13.1952621 11.8620763,13.1952621 11.0751576,12.4142136 L1,2.41421356 Z" id="Line"></path>
+                <polygon id="Line-2" points="2.44520838 16 1 14.5547916 7.55479162 8 9 9.44520838"></polygon>
+                <polygon id="Line-2" points="24 14.5547916 22.5547916 16 16 9.44520838 17.4452084 8"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
