@@ -75,10 +75,10 @@ function Tabs(el) {
     };
     this.moveContent = function(tab) {
         this.contentContainer.style['margin-left'] = (0 - (this.indexes[tab.name] * 100)) + '%';
-        this.contentContainer.style.opacity = 0;
-        setTimeout(function() {
-            this.content.style.opacity = 1;
-        }, 150);
+        // this.contentContainer.style.opacity = 0;
+        // setTimeout(function() {
+        //     this.content.style.opacity = 1;
+        // }, 150);
     };
     this.moveSelector = function(tab) {
         var mid = window.innerWidth / 2;
