@@ -7,15 +7,26 @@
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <div id="splash">
+            <div id="splash-logo">
+                <img src="img/arva.svg"/>
+            </div>
+            <div id="splash-container">
+                <div id="splash-tagline">
+                        The fresh-cut JS framework<br/>
+                        for highly interactive apps
+                </div>
+            </div>
+        </div>
         <div id="mobile-header">
             <div id="mobile-logo">
-                <img  src="img/arva.png"/>
+                <img  src="img/arva.svg"/>
             </div>
             <div id="nav-container">
                 <select>
-                    <option>Resources</option>
                     <option>Features</option>
                     <option>Projects</option>
+                    <option>Resources</option>
                     <option>About</option>
                     <option>Support</option>
                 </select>
@@ -23,14 +34,14 @@
         </div>
         <div id="header">
             <div id="tab-container">
-                <div id="tab-resources" class="tab">
-                    <a href="#resources">Resources</a>
-                </div>
                 <div id="tab-features" class="tab">
                     <a href="#features">Features</a>
                 </div>
                 <div id="tab-projects" class="tab">
                     <a href="#projects">Projects</a>
+                </div>
+                <div id="tab-resources" class="tab">
+                    <a href="#resources">Resources</a>
                 </div>
                 <div id="tab-about" class="tab">
                     <a href="#about">About</a>
@@ -43,98 +54,50 @@
         </div>
         <div id="content-wrapper">
             <div id="content">
-                <div id="content-resources">
-                    <div id="resources-grid-wrapper">
-                        <div id="resources-grid">
-                            <a class="resources-item" href="https://github.com/Arva/arva-js" target="_blank">
-                                <div class="resources-item-wrapper">
-                                    <img class="resources-img" src="img/get_started.svg"/>
-                                    <div class="resources-title">Get Started</div>
-                                    <div class="resources-subtitle">Install the latest version</div>
-                                </div>
-                            </a>
-                            <a class="resources-item" href="http://arva.io/arva-js/" target="_blank">
-                                <div class="resources-item-wrapper">
-                                    <img class="resources-img" src="img/documentation.svg"/>
-                                    <div class="resources-title">Documentation</div>
-                                    <div class="resources-subtitle">Your bible of power</div>
-                                </div>
-                            </a>
-                            <a class="resources-item" href="http://reddit.com/r/arvajs" target="_blank">
-                                <div class="resources-item-wrapper">
-                                    <img class="resources-img" src="img/reddit.svg"/>
-                                    <div class="resources-title">Arva on Reddit</div>
-                                    <div class="resources-subtitle">Discuss anything</div>
-                                </div>
-                            </a>
-                            <a class="resources-item" href="http://reddit.com/r/arvajs" target="_blank">
-                                <div class="resources-item-wrapper">
-                                    <img class="resources-img" src="img/tutorial.svg"/>
-                                    <div class="resources-title">Tutorial</div>
-                                    <div class="resources-subtitle">Get to know ARVA</div>
-                                </div>
-                            </a>
-                            <a class="resources-item" href="https://github.com/Arva/arva-ui-kit" target="_blank">
-                                <div class="resources-item-wrapper">
-                                    <img class="resources-img" src="img/arva_ui.svg"/>
-                                    <div class="resources-title">ARVA UI Kit</div>
-                                    <div class="resources-subtitle">Free component library</div>
-                                </div>
-                            </a>
-                            <a class="resources-item" href="https://github.com/Arva/arva-icon-set" target="_blank">
-                                <div class="resources-item-wrapper">
-                                    <img class="resources-img" src="img/arva_icons.svg"/>
-                                    <div class="resources-title">ARVA Icons</div>
-                                    <div class="resources-subtitle">Free icon set</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div id="content-features">
                     <div id="features-grid-wrapper">
                         <div id="features-grid">
                             <div class="features-item">
                                 <div class="features-img-container">
-                                    <img class="features-img" src="img/animation.svg"/>
-                                </div>
-                                <div class="features-title">Granular Animations</div>
-                                <div class="features-subtitle">Granular animations have never been easier to code. Using the Layout and Flow APIs, any animation is possible.</div>
-                            </div>
-                            <div class="features-item">
-                                <div class="features-img-container">
-                                    <img class="features-img" src="img/platform.svg"/>
-                                </div>
-                                <div class="features-title">Cross Platform</div>
-                                <div class="features-subtitle">Whether you want to deploy your idea on mobile, desktops, smart TVs, websites or all at once, ARVA has you covered.</div>
-                            </div>
-                            <div class="features-item">
-                                <div class="features-img-container">
-                                    <img class="features-img" src="img/responsive.svg"/>
-                                </div>
-                                <div class="features-title">Responsive Nature</div>
-                                <div class="features-subtitle">With scalability in mind, you can build UIs that effortlessly adapt to all possible screen sizes.</div>
-                            </div>
-                            <div class="features-item">
-                                <div class="features-img-container">
                                     <img class="features-img" src="img/native.svg"/>
                                 </div>
                                 <div class="features-title">Native Feel</div>
-                                <div class="features-subtitle">Delight your customers with a great native-like experience, complete with 60fps granular animations.</div>
+                                <div class="features-subtitle">Under-the-hood matrix multiplications for absolute positioning offer 3D support and provides 60fps granular animations.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-img-container">
+                                    <img class="features-img" src="img/animation.svg"/>
+                                </div>
+                                <div class="features-title">Integrated Animations</div>
+                                <div class="features-subtitle">Animations gives visual clues to the audience with subconscious understanding of how to interact with an application. They are essential to user experience and built-in to the framework. No plugins or CSS magic needed.</div>
                             </div>
                             <div class="features-item">
                                 <div class="features-img-container">
                                     <img class="features-img" src="img/quality.svg"/>
                                 </div>
-                                <div class="features-title">Enterprise-Grade Quality</div>
-                                <div class="features-subtitle">We know how managing sizeable projects can turn into a nightmare, so we built ARVA to fit your most ambitious goals.</div>
+                                <div class="features-title">Standard Syntax</div>
+                                <div class="features-subtitle">The absence of JSX or templating language can seem foreign as almost every other framework is using their own custom language. We use standard ES6 syntax all the way to ensure native browser compatibility.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-img-container">
+                                    <img class="features-img" src="img/render.svg"/>
+                                </div>
+                                <div class="features-title">Efficient Update Algorithm</div>
+                                <div class="features-subtitle">Views are state machines that perform partial re-renders for change in declared state operations. Syntax is straight-forward and there is only one source of truth of view state data.</div>
+                            </div>
+                            <div class="features-item">
+                                <div class="features-img-container">
+                                    <img class="features-img" src="img/responsive.svg"/>
+                                </div>
+                                <div class="features-title">Abstracted Layout Engine</div>
+                                <div class="features-subtitle">While CSS is still used for styling of the content, whereas positioning and sizing is handled in a more pragmatic way. Arva abstracts away some of the concerns that many front-end developers face, which includes CSS deep-dives and complex layout directives.</div>
                             </div>
                             <div class="features-item">
                                 <div class="features-img-container">
                                     <img class="features-img" src="img/reusability.svg"/>
                                 </div>
-                                <div class="features-title">Component Reusability</div>
-                                <div class="features-subtitle">You never enjoyed reinventing the wheel. Neither did we. And with ARVA, you don't have to, either.</div>
+                                <div class="features-title">More than just Visuals</div>
+                                <div class="features-subtitle">Routers and controllers offer support for top-level control and data manipulation.</div>
                             </div>
                         </div>
                     </div>
@@ -244,6 +207,54 @@
                         </div>
                     </div>
                 </div>
+                <div id="content-resources">
+                        <div id="resources-grid-wrapper">
+                            <div id="resources-grid">
+                                <a class="resources-item" href="https://github.com/Arva/arva-js" target="_blank">
+                                    <div class="resources-item-wrapper">
+                                        <img class="resources-img" src="img/get_started.svg"/>
+                                        <div class="resources-title">Get Started</div>
+                                        <div class="resources-subtitle">Install the latest version</div>
+                                    </div>
+                                </a>
+                                <a class="resources-item" href="http://arva.io/arva-js/" target="_blank">
+                                    <div class="resources-item-wrapper">
+                                        <img class="resources-img" src="img/documentation.svg"/>
+                                        <div class="resources-title">Documentation</div>
+                                        <div class="resources-subtitle">Your bible of power</div>
+                                    </div>
+                                </a>
+                                <a class="resources-item" href="http://reddit.com/r/arvajs" target="_blank">
+                                    <div class="resources-item-wrapper">
+                                        <img class="resources-img" src="img/reddit.svg"/>
+                                        <div class="resources-title">Arva on Reddit</div>
+                                        <div class="resources-subtitle">Discuss anything</div>
+                                    </div>
+                                </a>
+                                <a class="resources-item" href="http://reddit.com/r/arvajs" target="_blank">
+                                    <div class="resources-item-wrapper">
+                                        <img class="resources-img" src="img/tutorial.svg"/>
+                                        <div class="resources-title">Tutorial</div>
+                                        <div class="resources-subtitle">Get to know ARVA</div>
+                                    </div>
+                                </a>
+                                <a class="resources-item" href="https://github.com/Arva/arva-ui-kit" target="_blank">
+                                    <div class="resources-item-wrapper">
+                                        <img class="resources-img" src="img/arva_ui.svg"/>
+                                        <div class="resources-title">ARVA UI Kit</div>
+                                        <div class="resources-subtitle">Free component library</div>
+                                    </div>
+                                </a>
+                                <a class="resources-item" href="https://github.com/Arva/arva-icon-set" target="_blank">
+                                    <div class="resources-item-wrapper">
+                                        <img class="resources-img" src="img/arva_icons.svg"/>
+                                        <div class="resources-title">ARVA Icons</div>
+                                        <div class="resources-subtitle">Free icon set</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 <div id="content-about">
                     <div id="about-grid-wrapper">
                         <div id="about-grid">
@@ -281,101 +292,31 @@
                     <div id="support-grid-wrapper">
                         <div id="support-grid">
                             <div class="support-column">
-                                <div class="support-title">Capabilities</div>
+                                <div class="support-title">What is Arva?</div>
                                 <div class="faq">
                                     <div class="faq-question">
                                         <div>
-                                            Which platforms are supported?
+                                            How can I contribute to Arva?
                                         </div>
                                         <div class="arrow">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
                                         </div>
                                     </div>
                                     <div class="faq-answer">
-                                        Windows Mobile only
+                                            Good question! First thing to do is to head over to our <a target="_BLANK" href="https://github.com/Arva/arva-js">repository</a>. Then, get into the code and make a pull request. If you have any questions about how the code should work or style guidelines, make an issue on the repository or contact <a href="mailto:karl@bizboard.nl">Karl</a>
                                     </div>
                                 </div>
                                 <div class="faq">
                                     <div class="faq-question">
                                         <div>
-                                            How well does it scale
+                                            How did Arva originate?
                                         </div>
                                         <div class="arrow">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
                                         </div>
                                     </div>
                                     <div class="faq-answer">
-                                        All the way from small to big
-                                    </div>
-                                </div>
-                                <div class="faq">
-                                    <div class="faq-question">
-                                        <div>
-                                            How long until I can create my first application?
-                                        </div>
-                                        <div class="arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
-                                        </div>
-                                    </div>
-                                    <div class="faq-answer">
-                                        You haven't started yet?
-                                    </div>
-                                </div>
-                                <div class="faq">
-                                    <div class="faq-question">
-                                        <div>
-                                            Can I use native platform features?
-                                        </div>
-                                        <div class="arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
-                                        </div>
-                                    </div>
-                                    <div class="faq-answer">
-                                        Probably
-                                    </div>
-                                </div>
-                                <div class="support-title">Known issues</div>
-                                <div class="faq">
-                                    <div class="faq-question">
-                                        <div>
-                                            Why are SVGs sometimes rendered incorrectly?
-                                        </div>
-                                        <div class="arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
-                                        </div>
-                                    </div>
-                                    <div class="faq-answer">
-                                        Because your SVGs suck and you should feel bad
-                                    </div>
-                                </div>
-                                <div class="faq">
-                                    <div class="faq-question">
-                                        <div>
-                                            Why are list elements jumping around?
-                                        </div>
-                                        <div class="arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
-                                        </div>
-                                    </div>
-                                    <div class="faq-answer">
-                                        They're easily excited
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="support-column">
-                                <div class="support-title">Results</div>
-                                <div class="faq">
-                                    <div class="faq-question">
-                                        <div>
-                                            Are clients usually happy?
-                                        </div>
-                                        <div class="arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
-                                        </div>
-                                    </div>
-                                    <div class="faq-answer">
-                                        I hope so
-                                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                            Arva started in 2015 when seeing the need for developing high-quality mobile apps on par with the native equivalents. At the time, Facebook had recently split their mobile app into two in order to achieve satisfactory results. Today, there is still a need for a reliable option to make hybrid worth it and Facebook (and many others) are still using native apps.
                                     </div>
                                 </div>
                                 <div class="faq">
@@ -394,14 +335,82 @@
                                 <div class="faq">
                                     <div class="faq-question">
                                         <div>
-                                            Does it auto-skyrocket businesses?
+                                            Does Arva UI Kit include component X?
                                         </div>
                                         <div class="arrow">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
                                         </div>
                                     </div>
                                     <div class="faq-answer">
-                                        Yep
+                                            Components for most use-cases are included out of the box. If you have requests of your missing favorite component, make an issue, or send us a pull-request.
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Is Arva an acronym?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                            No! Arva is just the name of the product. It's proven to be sticky to peoples mind and the latin-sounding name goes well for many different speakers in other parts of the world. If you really want, we invented a backronym: Assemble Rapid Velocity Applications.
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            What makes Arva different from other frameworks like Vue or React?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                            We've elaborated on this topic <a target="_BLANK" href="http://arva.io/arva-js/manual/tutorial.html#but-what-about-react-">here</a>.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="support-column">
+                                <div class="support-title">Roadmap</div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            Who is building Arva?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                            Arva is maintained and designed by Karl Lundfall at <a target="_BLANK" href="http://bizboard.nl">Bizboard</a>. The code started as a fork off the library Famous and has realized the promises of that framework and combined it with modern paradigms of today's front end tooling.
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            What is the bigger picture of Arva?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                        Arva Foundation is the core of the Arva User Experience Platform where developers have complete freedom to hack their creations. It's a part of a suite of products that are all aimed at simplifying application development. Read more <a target="_BLANK" href="//arva.io">here</a>.
+                                    </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="faq-question">
+                                        <div>
+                                            What is the future of Arva?
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9"><style>.a{fill:none;}.b{stroke-width:2;stroke:currentColor;}</style><g class="a"><g class="b"><polyline points="0 0 7 9 14 0"/></g></g></svg>
+                                        </div>
+                                    </div>
+                                    <div class="faq-answer">
+                                            Arva as a Javascript framework is under constant development and maintenance. Closest ahead is to improve the current routing logic to be more flexible. We'll continuously make performance bumps to make rendering smoother. We'll also make improved solutions for external database integration.
                                     </div>
                                 </div>
                                 <div class="support-title">More questions?</div>

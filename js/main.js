@@ -1,6 +1,7 @@
 /** * Created by Tom Steele on 20/12/2017.
  */
 window.addEventListener('load', function(e) {
+    playSplash();
     var tabs = new Tabs(document.getElementById("tab-container"));
     var faqs = new FAQ(document.getElementById("support-grid"));
     var mobileNav = document.getElementById("mobile-header");
@@ -35,8 +36,42 @@ window.addEventListener('load', function(e) {
     });
     document.getElementsByClassName("next")[0].addEventListener("click", function() { slider.goTo('next'); });
     document.getElementsByClassName("prev")[0].addEventListener("click", function() { slider.goTo('prev'); });
+    
 });
 
+function playSplash() {
+    var timer = null;
+    var splash = document.getElementById('splash');
+    var logo = document.getElementById("splash-logo");
+    var tagline = document.getElementById("splash-tagline");
+    var container = document.getElementById("splash-container");
+    var endSplash = function(val) {
+        if(val) {
+            clearTimeout(timer);
+            splash.classList.remove('splash-intro');
+            splash.classList.add('splash-out');
+            setTimeout(function() {
+                splash.classList.remove('splash-out');
+                splash.classList.add('splash-hide');
+            }, 400);
+        } else {
+            splash.classList.remove('splash-out');
+            splash.classList.add('splash-hide');
+        }
+    }
+    if(window.location.hash) {
+        endSplash(false);
+        return;
+    }
+    container.addEventListener("click", function() {
+        endSplash(true);
+    });
+    timer = setTimeout(function() {
+        endSplash(true);
+    }, 3000);
+
+    splash.classList.add('splash-intro');
+}
 
 function Tabs(el) {
     this.setupEvents = function() {
@@ -84,6 +119,10 @@ function Tabs(el) {
         var mid = window.innerWidth / 2;
         var bb = tab.tab.getBoundingClientRect();
         var selectorMid = this.selector.getBoundingClientRect().width / 2;
+        if(!bb.x) {
+            bb.x = bb.left;
+            bb.y = bb.top;
+        }
         var x = bb.x + (bb.width / 2);
         this.selector.style.left = (x - mid) + 3;
     };
@@ -122,7 +161,8 @@ function FAQ(el) {
 
     this.initFAQs = function(id) {
         let i = 0;
-        for(const elFAQ of this.elFAQs) {
+        for(var x = 0; x < this.elFAQs.length; x++) {
+            var elFAQ = this.elFAQs[x];
             const question = elFAQ.getElementsByClassName("faq-question");
             const answer = elFAQ.getElementsByClassName("faq-answer");
             this.faqs["faq-" + i] = { question: question, answer: answer, expanded: false };
