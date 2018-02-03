@@ -323,12 +323,32 @@ body {
 }
 
 .projects-case {
-    padding: 0.5em 1em;
-    width: 4em;
-    line-height: 2em;
-    height: 2em;
     background: #18D3B9;
-    box-shadow: 0 8px 16px 0 rgba(24,211,185,0.30);
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(24,211,185,0.16);
+}
+
+.projects-tag {
+    font-size: 14px;
+    padding: 0.643em 1.1652em;
+}
+
+.projects-use {
+    background: #FAFAFA;
+    color: #18D3B9;
+}
+
+.projects-private {
+    background: #FAFAFA;
+    color: #888888; 
+}
+
+.projects-tag {
+    margin-left: 16px;
+}
+
+.projects-tag:first-child {
+    margin-left: 0;
 }
 
 .features-title {
@@ -406,6 +426,9 @@ body {
 
 .info-right {
     padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .people-img {
